@@ -1,0 +1,123 @@
+.box{
+    display: grid;
+    column-gap: 16px;
+    row-gap: 40px;
+    margin-left: -15px;
+    margin-right: 25px;
+    padding-left: 30px;
+    padding-bottom: 50px;
+    margin-top: -30px;
+    padding-top: 30px;
+    background-color: rgb(253, 247, 247);
+        
+}
+@media (max-width:850px ){
+    .box{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width: 850.02px) and (max-width: 1125px){
+    .box{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (min-width:1125.02px ){
+    .box{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+.thumbnail-box{
+    position: relative;
+}
+.thumbnail{
+    width: 100%;
+}
+.absolute-time{
+    position: absolute;
+    bottom: 11px;
+    right: 5px;
+    background-color: black;
+    color: white;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 3px 3px;
+    padding: top left bottom right;
+}
+
+.flex-video-info{
+ display: flex;    
+}
+.channel-pic{
+    width: 36px;
+    height: 36px;
+    border-radius: 19px;
+    margin-top: 8px;
+}
+.video-info-box{
+    flex: 1;
+    margin-left: 12px;
+}
+
+.video-name{
+    margin-top: 8px;
+    font-size: 14px;
+    margin-right: 8px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    line-height: 20px;
+   
+}
+.channel-name{
+    font-size: 12px;
+    margin-bottom: 4px;
+    color: grey;
+}
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+.video-stats{
+    font-size: 12px;
+    color: grey;
+}
+
+.channel-pic-box{
+    position:relative;
+}
+.channel-pic-box .tool-tip{
+    position: absolute;
+    background-color: white;
+    bottom: -35px;
+    width: 220px;
+    height: 70px;
+    display: flex;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    cursor: pointer;
+    transition: opacity 0.15s;
+    
+}
+.channel-pic-box:hover .tool-tip{
+    opacity: 1;
+}
+.tool-tip-channel-pic{
+    width:46px;
+    height: 46px;
+    border-radius: 23px;
+    margin-left: 12px;
+    margin-top: 12px;
+}
+.tool-tip-channel-name{
+    margin-top: 12px;
+    font-weight: bold;
+    margin-left: 8px;
+    margin-bottom: 3px;
+}
+.subscibers-count {
+    font-size: 14px;
+    margin-left: 8px;
+    color: grey;
+}
